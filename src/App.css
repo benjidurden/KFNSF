@@ -1,0 +1,499 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+
+body {
+    font-family: "Roboto";
+}
+/* Overriding the default styling for the blog link */
+.link {
+    color: black;
+    text-decoration: none;
+}
+.link:visited {
+    color: black;
+    text-decoration: none;
+}
+/* Overriding default styling for the Photo and Film categories */
+.catalog:hover {
+    cursor: pointer;
+}
+/* Hiding the content within the photo and video div's. This will be overrided by an onClick function with React */
+.closed {
+    display: none;
+}
+
+.prints {
+    width: 30%;
+    height: 30%;
+    margin-left: 12px;
+}
+
+.shirt-pic {
+    width: 30%;
+    height: 30%;
+}
+
+.itemHeader {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 27px;
+}
+
+.storeHead {
+    position: relative;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.storeLink {
+    text-decoration: none;
+    color: black;
+}
+
+.storeLink:visited {
+    color: black;
+}
+
+.invisible {
+    display: none;
+}
+
+.portfolioItem {
+    cursor: pointer;
+    color: darkgray;
+    text-decoration-style: none;
+}
+
+.removeStyling {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #cccccc;
+}
+.removeStyling:hover{
+    color: black;
+}
+
+.portfolioItem:hover{
+    color: black;
+}
+
+.itemContainer {
+    /* position: relative;
+    display: inline-block; */
+    display: table-row;
+    width: 100%;
+    vertical-align: top;
+}
+
+
+
+#spacing {
+    display: inline;
+    padding: 32px;
+    margin: auto;
+}
+
+#allItemWrapper {
+    margin: 50px;
+}
+
+/* CSS Transition for the Hover effect over the menu Items. First thing that you should do is attempt to overlay the text on the image. */
+
+.textWrapper {
+    visibility: hidden;
+}
+
+.itemContainer:hover .textWrapper{
+    visibility: visible;
+}
+
+.textWrapper {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.text {
+    display: inline;
+}
+
+/* Mainpage Container */
+
+
+.title {
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+/* Photo CSS when the Photo rollout is closed */
+/* .currentPhoto {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 40%;
+    bottom: 100px;
+} */
+
+.currentPhoto {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 40%;
+    bottom: 105px;
+}
+
+/* Photo CSS When the Photo rollout is open */
+.fixCurrentPhoto {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 40%;
+    bottom: 230px;
+}
+
+/* Kinnes Film CSS */
+
+ul, li, h3 {
+    display: table-row-group;
+}
+
+.currentVideo {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    bottom: 105px;
+    width: 730px;
+    height: 450px;
+}
+
+.filmTitle, .filmType, .productionRole {
+    position: relative;
+    display: block;
+    top: -95px;
+    left: 218px;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+/* KinnesSite Bio */
+.kinnesBio {
+    text-align: center;
+    color: black;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    bottom: -110px;
+}
+
+.ant-dropdown-link, .responsiveOther {
+    font-size: 16px;
+    position: relative;
+    display: block;
+    top: 59px;
+    left: 53px;
+    line-height: 170%;
+    text-transform: uppercase;
+}
+
+/* Kinnes Photography CSS */
+.photoTitle, .photoDescription {
+    position: relative;
+    display: block;
+    bottom: 97px;
+    left: 345px;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+/* Shopping Cart Icon */
+
+.cartIcon {
+    position: relative;
+    display: block;
+    float: right;
+    clear: both;
+    top: -95px;
+    color: #1c1d1d;
+}
+
+#cartOnStore {
+    top: -70px;
+}
+
+#printCart {
+    top: -50px;
+}
+
+#supportBK {
+    top: -50px;
+}
+
+#storeDesc {
+    position: relative;
+    display: inline-block;
+    color: black;
+    top: 100px;
+}
+
+#storeDesc2 {
+    position: relative;
+    display: inline-block;
+    color: black;
+    top: 100px;
+}
+
+#container1 {
+    left: 140px;
+    top: 20px;
+}
+
+#container2 {
+    /* display: table-cell;
+    vertical-align: top;
+    text-align: right; */
+    position: relative;
+    display: inline-block;
+    margin-left: -80px;
+    top: -365px;
+    right: -670px;
+}
+
+.storeFront {
+    text-align: center;
+}
+
+.printFull {
+    width: 32%;
+    height: 32%;
+}
+
+.shirtFull {
+    width: 30%;
+    height: 30%;
+}
+
+.itemInfo {
+    position: absolute;
+    display: inline-block;
+    bottom: 300px;
+    left: 400px;
+    color: black;
+    font-size: 16px;
+}
+
+.cartButtons {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    clear: both;
+    left: 500px;
+}
+
+.mainContainer {
+    max-width: 1050px;
+    margin: 60px auto;
+}
+
+#subTank {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+img {
+    margin: 5px;
+}
+
+.main {
+    max-width: 100%;
+    height: auto;
+}
+
+.hideModal {
+    display: none;
+}
+
+.cart_row {
+    border-bottom: 1px solid #1c1d1d;
+    padding-bottom: 15px;
+}
+
+.hr--small {
+   margin: 20px auto;
+}
+
+hr, .hr--small {
+    border-width: 3px 0 0 0;
+    width: 50px;
+}
+
+hr {
+    border-top: solid #1c1d1d;
+}
+
+.tableHead {
+    color: #1c1d1d;
+}
+
+#cartIdentifier {
+    text-align: center;
+}
+
+#cartShirt {
+    width: 50%;
+    height: 50%;
+}
+
+#cartPrint {
+    width: 50%;
+    height: 50%;
+}
+
+.shopInput {
+    background: #f6f6f6;
+    color: #1c1d1d;
+    margin: 0 auto;
+    height: 40px;
+    width: 75px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.costContainer {
+    color: #1c1d1d;
+}
+
+.itemTitle {
+    font-weight: 700;
+}
+
+.itemSize, .itemRemover {
+    font-weight: 300;
+}
+
+.itemTitle, .itemSize, .itemRemover {
+    color: #1c1d1d;
+}
+
+.itemRemover {
+    cursor: pointer;
+}
+
+.borderRow {
+    border-top: 1px solid #1c1d1d;
+    padding-top: 18px;
+}
+
+/* Everything black */
+
+.homeHead, .storeHead, .storeFront {
+    color: #1c1d1d;
+}
+
+.storeHead {
+    text-align: center;
+}
+
+#emptyCartIcon {
+    top: -25px;
+}
+
+#newCartIcon {
+    top: -25px;
+}
+
+.fixCart {
+    color: #1c1d1d;
+    text-align: center;
+}
+
+.totals {
+    float: right;
+    clear: both;
+}
+.cartButtons, .hideModal {
+    left: 900px;
+}
+
+.construction {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -50px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+/* Media Queries */
+/* iPhone 6 */
+@media only screen and (min-width: 375px) and (max-width: 667px){
+    .kinnesBio {
+        font-size: 15px;
+        bottom: -5px;
+    }
+    .responsiveHead {
+        position: relative;
+        display: block;
+        top: 300px;
+        left: 150px;
+        font-size: 21px;
+        padding-top: 20px;
+    }
+    a {
+        color: black;
+    }
+    .currentPhoto {
+        width: 35%;
+        height: 35%;
+        bottom: 120px;
+    }
+    .photoTitle, .photoDescription {
+        top: -40px;
+        left: 0px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .filmTitle, .filmType, .productionRole {
+        top: -40px;
+        left: 0px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .currentVideo {
+        width: 320px;
+        height: 440px;
+        left: 25px;
+    }
+}
+
+/* iPhone 6Plus and 7 Plus */
+@media only screen and (min-width: 414px) and (max-width: 736px){
+
+}
+
+/* iPhone 5 and 5s */
+@media only screen and (min-width: 320px) and (max-width: 568px){
+
+}
+
+/* iPhone 2Gs - 4 */
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+}
