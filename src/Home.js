@@ -5,12 +5,12 @@ import {Menu, Dropdown, Icon} from 'antd';
 const photoMenu = (
     <Menu>
     <Menu.Item key="0">
-         <Link to = "/redmercedes">
+         <Link className="listLinks" to = "/redmercedes">
          Red Mercedes
          </Link>
     </Menu.Item>
     <Menu.Item key="1">
-         <Link to = "/heebiejeebies">
+         <Link className="listLinks" to = "/heebiejeebies">
          HeebieJeebies
          </Link>
     </Menu.Item>
@@ -20,32 +20,32 @@ const photoMenu = (
 const filmMenu = (
     <Menu>
       <Menu.Item key = "2">
-        <Link to = "/caroline">
+        <Link className="listLinks" to = "/caroline">
          Caroline
         </Link>
        </Menu.Item>
        <Menu.Item key = "3">
-         <Link to = "/myneighbor">
+         <Link className="listLinks" to = "/myneighbor">
            My Neighbor is a Drug Dealer
          </Link>
        </Menu.Item>
        <Menu.Item key = "4">
-         <Link to = "/wendy">
+         <Link className="listLinks" to = "/wendy">
           Wendy
          </Link>
        </Menu.Item>
        <Menu.Item key = "5">
-         <Link to = "/american-boyband">
+         <Link className="listLinks" to = "/american-boyband">
          American Boyband
         </Link>
        </Menu.Item>
        <Menu.Item key = "6">
-         <Link to = "/helmet-boy">
+         <Link className="listLinks" to = "/helmet-boy">
          Helmet Boy Episode 4
          </Link>
        </Menu.Item>
        <Menu.Item key = "7">
-         <Link to = "/beauty-salon">
+         <Link className="listLinks" to = "/beauty-salon">
           Beauty Salon
           </Link>
        </Menu.Item>
@@ -54,6 +54,7 @@ const filmMenu = (
    
 
 class Home extends Component {
+
     render(){
         //Main description null
         var kinnesBio = null;
@@ -138,7 +139,7 @@ class Home extends Component {
                 </div>
                 {/* Film Menu */}
                 <Dropdown overlay = {filmMenu}>
-                <a className = "ant-dropdown-link">
+                <a className = "ant-dropdown-link" trigger={['click']}>
                     Film <Icon type = "down" />
                 </a>
                 </Dropdown>

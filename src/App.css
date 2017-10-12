@@ -183,7 +183,7 @@ ul, li, h3 {
     position: relative;
     display: block;
     top: -95px;
-    left: 218px;
+    left: 270px;
     font-size: 12px;
     line-height: 150%;
 }
@@ -202,8 +202,9 @@ ul, li, h3 {
     font-size: 16px;
     position: relative;
     display: block;
-    top: 59px;
-    left: 53px;
+    /* top: 59px; */
+    top: 80px;
+    left: 60px;
     line-height: 170%;
     text-transform: uppercase;
 }
@@ -213,7 +214,7 @@ ul, li, h3 {
     position: relative;
     display: block;
     bottom: 97px;
-    left: 345px;
+    left: 380px;
     font-size: 12px;
     line-height: 150%;
 }
@@ -444,56 +445,113 @@ hr {
 /* Media Queries */
 /* iPhone 6 */
 @media only screen and (min-width: 375px) and (max-width: 667px){
-    .kinnesBio {
-        font-size: 15px;
-        bottom: -5px;
-    }
-    .responsiveHead {
+
+    body {
         position: relative;
         display: block;
-        top: 300px;
-        left: 150px;
-        font-size: 21px;
-        padding-top: 20px;
+        left: 50px;
     }
-    a {
-        color: black;
+
+    .ant-dropdown-link, .responsiveOther {
+        left: 150px;
+    }
+
+    .photoTitle, .photoDescription {
+        text-align: center;
+    }
+
+    .currentVideo {
+        height: 180px;
+    }
+}
+
+/* iPhone 6Plus and 7 Plus - This MC has been tested */
+@media only screen and (min-width: 414px) and (max-width: 736px){
+    .photoTitle, .photoDescription {
+        left: 20px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20px;
+        bottom: 5px;
     }
     .currentPhoto {
-        width: 35%;
-        height: 35%;
-        bottom: 120px;
+        width: 65%;
+        height: 65%;
+        bottom: 40px;
+        left: 20px;
     }
-    .photoTitle, .photoDescription {
-        top: -40px;
-        left: 0px;
-        text-align: center;
-        font-size: 12px;
-    }
-    .filmTitle, .filmType, .productionRole {
-        top: -40px;
-        left: 0px;
-        text-align: center;
-        font-size: 12px;
-    }
-    .currentVideo {
-        width: 320px;
-        height: 440px;
+    .kinnesBio {
+        bottom: -70px;
         left: 25px;
     }
+    .title {
+        position: relative;
+        left: 25px;
+    }
+    .ant-dropdown-link, .responsiveOther{
+        top: 450px;
+        left: 175px;
+    }
+    .currentVideo {
+        bottom: 100px;
+        width: 200px;
+        height: 140px;
+        top: 5px;
+        left: 20px;
+    }
+    .filmTitle, .filmType, .productionRole {
+        left: 20px;
+        top: 50px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .listLinks {
+        font-size: 25px;
+    }
 }
-
-/* iPhone 6Plus and 7 Plus */
-@media only screen and (min-width: 414px) and (max-width: 736px){
-
-}
-
 /* iPhone 5 and 5s */
 @media only screen and (min-width: 320px) and (max-width: 568px){
 
+body {
+    position: relative;
+    display: block;
+    left: 50px;
 }
 
-/* iPhone 2Gs - 4 */
-@media only screen and (min-width: 320px) and (max-width: 480px){
+.kinnesBio {
+    bottom: -20px;
+}
+
+.ant-dropdown-link, .responsiveOther {
+    top: 320px;
+    left: 120px;
+}
+
+.photoTitle, .photoDescription {
+    text-align: center;
+    left: 0px;
+    font-size: 18px;
+}
+
+.filmTitle, .filmType, .productionRole {
+    text-align: center;
+    left: 0px;
+    font-size: 16px;
+}
+
+.currentVideo {
+    width: 200px;
+    height: 140px;
+}
+
+.currentPhoto {
+    width: 55%;
+    height: 55%;
+}
+
+.listLinks {
+    font-size: 25px;
+}
 
 }
