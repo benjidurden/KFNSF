@@ -466,7 +466,7 @@ hr {
 }
 
 /* iPhone 6Plus and 7 Plus - This MC has been tested */
-@media only screen and (min-width: 414px) and (max-width: 736px){
+/* @media only screen and (min-width: 414px) and (max-width: 736px){
     .photoTitle, .photoDescription {
         left: 20px;
         text-align: center;
@@ -509,7 +509,7 @@ hr {
     .listLinks {
         font-size: 25px;
     }
-}
+} */
 /* iPhone 5 and 5s */
 @media only screen and (min-width: 320px) and (max-width: 568px){
 
